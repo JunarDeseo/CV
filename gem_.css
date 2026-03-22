@@ -71,6 +71,12 @@ h1 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 1rem;
     padding: 2rem 10%;
 }
 
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .project-card {
     background: var(--card-bg);
     border-radius: 12px;
@@ -80,10 +86,43 @@ h1 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 1rem;
 }
 
 .project-card:hover { transform: translateY(-5px); }
-
-.project-img { height: 200px; background: var(--secondary); }
+.project-img { height: 200px; background: var(--secondary); } /*Default*/
+.project-img1 { height: 200px; background-image:url("img/Tableau\ Report\ -\ Comment\ Module\ Project.PNG"); }
+.project-img2 { height: 200px; background-image:url("img/Tableau\ Report\ -\ Comment\ Module\ Project.PNG"); }
+.project-img3 { height: 200px; background-image:url("img/Tableau\ Report\ -\ Comment\ Module\ Project.PNG"); }
+.project-img4 { height: 200px; background-image:url("img/Tableau\ Report\ -\ Comment\ Module\ Project.PNG"); }
 .project-info { padding: 1.5rem; }
 .tags span { font-size: 0.8rem; background: var(--secondary); padding: 2px 8px; border-radius: 4px; margin-right: 5px; }
 
 /* Footer */
 footer { text-align: center; padding: 5rem 10%; background: var(--secondary); margin-top: 4rem; }
+
+.name-banner {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers it with your existing hero content */
+}
+
+.greeting {
+    font-size: 1.2rem;
+    color: #888; /* A subtle grey */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.my-name {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0.5rem 0;
+    background: linear-gradient(90deg, #007cf0, #00dfd8); /* Modern blue gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .my-name {
+        font-size: 2.5rem;
+    }
+}
