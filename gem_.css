@@ -4,7 +4,7 @@
     --text: #f8fafc;
     --secondary: #1e293b;
     --card-bg: #1e293b;
-    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);   
 }
 
 [data-theme="light"] {
@@ -78,6 +78,7 @@ h1 { font-size: clamp(2.4rem, 2vw, 4rem); line-height: 1.1; margin-bottom: 1rem;
 
 .section-title {
     display: flex;
+    padding-top: 40px;
     justify-content: center;
     align-items: center;
 }
@@ -107,7 +108,7 @@ footer { text-align: center; padding: 5rem 10%; background: var(--secondary); ma
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers it with your existing hero content */
-    padding-top: 2%;
+    padding-top: 40px;
 }
 
 .greeting {
