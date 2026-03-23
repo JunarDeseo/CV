@@ -5,19 +5,19 @@ const body = document.body;
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
     body.setAttribute('data-theme', currentTheme);
-    if (currentTheme === 'dark') toggleBtn.textContent = '☀️';
+    if (currentTheme === 'light') toggleBtn.textContent = '☀️';
 }
 
 toggleBtn.addEventListener('click', () => {
     let theme = body.getAttribute('data-theme');
     
-    if (theme === 'dark') {
+    if (theme === 'light') {
         body.removeAttribute('data-theme');
-        localStorage.setItem('theme', 'light');
+        localStorage.setItem('theme', 'dark');
         toggleBtn.textContent = '🌙';
     } else {
-        body.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
+        body.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
         toggleBtn.textContent = '☀️';
     }
 });

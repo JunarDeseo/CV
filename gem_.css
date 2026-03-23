@@ -1,19 +1,19 @@
 /* Variables for easy customization */
 :root {
-    --bg: #ffffff;
-    --text: #1a1a1a;
-    --accent: #6366f1;
-    --secondary: #f4f4f5;
-    --card-bg: #ffffff;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-[data-theme="dark"] {
     --bg: #0f172a;
     --text: #f8fafc;
     --secondary: #1e293b;
     --card-bg: #1e293b;
     --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] {
+   --bg: #ffffff;
+    --text: #1a1a1a;
+    --accent: #6366f1;
+    --secondary: #f4f4f5;
+    --card-bg: #ffffff;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -44,11 +44,16 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 80vh;
+    height: 50vh;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 5%;
+    padding-bottom: 2%;
 }
+
+.indented-block {
+    margin-left: 50px;
+  }
 
 .highlight { color: var(--accent); }
 h1 { font-size: clamp(2.4rem, 2vw, 4rem); line-height: 1.1; margin-bottom: 1rem; }
@@ -102,6 +107,7 @@ footer { text-align: center; padding: 5rem 10%; background: var(--secondary); ma
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers it with your existing hero content */
+    padding-top: 2%;
 }
 
 .greeting {
